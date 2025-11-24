@@ -1,4 +1,6 @@
-.container-fluid{
+@import url('https://fonts.googleapis.com/css2?family=Momo+Signature&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Stack+Sans+Text:wght@200..700&display=swap');
+
+/* .container-fluid{
     min-height: 100vh;
     width: 100vw;
     font-family: poppins;
@@ -12,4 +14,52 @@
 .para{
     color: red;
     font-size: 15px;
+} */
+body{
+    margin:0;
+    font-family: poppins;
+}
+.layout{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: minmax(400px,auto);
+    grid-template-rows: auto-fill;
+    grid-template-areas:
+        "main" ;
+    align-items: center;
+    justify-items:center;
+}
+.main-container{
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+
+.qr-container{
+    grid-area: main;
+}
+.qr-div{
+    display: grid;
+    justify-items: center;
+}
+.buttons{
+    display: grid;
+    grid-template-rows:30px ;
+}
+.heading{
+    font-size: 1.5rem;
+}
+.para{
+    color: red;
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+}
+.form-control{
+    font-size: .9rem;
+    padding: 1rem;
+}
+.qrImg{
+    /* margin-top:10px;
+    margin-bottom: 10px; */
+    display: block;
+    margin: auto;
 }
